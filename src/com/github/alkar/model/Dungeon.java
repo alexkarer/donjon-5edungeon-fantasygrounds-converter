@@ -2,21 +2,39 @@ package com.github.alkar.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Dungeon {
 
     @JsonProperty("cell_bit")
-    public CellBit cellBit;
+    private CellBit cellBit;
+
+    @JsonProperty("cells")
+    private List<List<Integer>> cells;
+
+    private List<CorridorFeature> corridorFeatures;
 
     @JsonProperty("details")
-    public Details dungeon;
-
-    @JsonProperty("settings")
-    public Settings settings;
+    private Details details;
 
     @JsonProperty("rooms")
-    public List<Room> rooms;
+    private List<Room> rooms;
+
+    @JsonProperty("settings")
+    private Settings settings;
+
+    @JsonProperty("stairs")
+    private List<Stair> stairs;
+
+    private List<WanderingMonster> wanderingMonsters;
 }

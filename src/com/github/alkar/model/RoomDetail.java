@@ -1,18 +1,26 @@
 package com.github.alkar.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class RoomDetail {
 
     @JsonProperty("monster")
-    public String[] monsterAndLoot;
+    private String[] monsterAndLoot;
 
     @JsonProperty("hidden_treasure")
-    public String[] hiddenTreasure;
+    private String[] hiddenTreasure;
 
     @JsonProperty("trap")
-    public String[] trap;
+    private String[] trap;
 
     @JsonProperty("room_features")
-    public String roomFeatures;
+    private String roomFeatures;
 }

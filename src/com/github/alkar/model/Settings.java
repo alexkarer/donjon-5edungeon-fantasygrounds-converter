@@ -1,99 +1,107 @@
 package com.github.alkar.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Settings {
 
     @JsonProperty("add_stairs")
-    public String addStairs;
+    private String addStairs;
 
     @JsonProperty("cell_size")
-    public Long cellSize;
+    private Long cellSize;
 
     @JsonProperty("corridor_layout")
-    public String corridorLayout;
+    private String corridorLayout;
 
     @JsonProperty("door_set")
-    public String doorSet;
+    private String doorSet;
 
     @JsonProperty("dungeon_layout")
-    public String dungeonLayout;
+    private String dungeonLayout;
 
     @JsonProperty("dungeon_size")
-    public String dungeonSize;
+    private String dungeonSize;
 
     @JsonProperty("grid")
-    public String grid;
+    private String grid;
 
     @JsonProperty("image_size")
-    public String imageSize;
+    private String imageSize;
 
     @JsonProperty("infest")
-    public String infest;
+    private String infest;
 
     @JsonProperty("last_room_id")
-    public Long lastRoomId;
+    private Long lastRoomId;
 
     @JsonProperty("level")
-    public Long level;
+    private Long level;
 
     @JsonProperty("map_cols")
-    public String mapCols;
+    private String mapCols;
 
     @JsonProperty("map_rows")
-    public String mapRows;
+    private String mapRows;
 
     @JsonProperty("map_style")
-    public String mapStyle;
+    private String mapStyle;
 
     @JsonProperty("max_col")
-    public Long maxCol;
+    private Long maxCol;
 
     @JsonProperty("max_row")
-    public Long maxRow;
+    private Long maxRow;
 
     @JsonProperty("motif")
-    public String motif;
+    private String motif;
 
     @JsonProperty("n_cols")
-    public Long nCols;
+    private Long nCols;
 
     @JsonProperty("n_i")
-    public Long nI;
+    private Long nI;
 
     @JsonProperty("n_j")
-    public Long nJ;
+    private Long nJ;
 
     @JsonProperty("n_pc")
-    public Long nPc;
+    private Long nPc;
 
     @JsonProperty("n_rooms")
-    public Long nRooms;
+    private Long nRooms;
 
     @JsonProperty("n_rows")
-    public Long nRows;
+    private Long nRows;
 
     @JsonProperty("name")
-    public String name;
+    private String name;
 
     @JsonProperty("peripheral_egress")
-    public String peripheralEgress;
+    private String peripheralEgress;
 
     @JsonProperty("remove_arcs")
-    public String removeArcs;
+    private String removeArcs;
 
     @JsonProperty("remove_deadends")
-    public String removeDeadends;
+    private String removeDeadends;
 
     @JsonProperty("room_layout")
-    public String roomLayout;
+    private String roomLayout;
 
     @JsonProperty("room_polymorph")
-    public String roomPolymorph;
+    private String roomPolymorph;
 
     @JsonProperty("room_size")
-    public String roomSize;
+    private String roomSize;
 
     @JsonProperty("seed")
-    public Long seed;
+    private Long seed;
 }

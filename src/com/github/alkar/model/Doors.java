@@ -1,18 +1,26 @@
 package com.github.alkar.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Doors {
 
     @JsonProperty("north")
-    public Door[] north;
+    private Door[] north;
 
     @JsonProperty("west")
-    public Door[] west;
+    private Door[] west;
 
     @JsonProperty("east")
-    public Door[] east;
+    private Door[] east;
 
     @JsonProperty("south")
-    public Door[] south;
+    private Door[] south;
 }

@@ -10,14 +10,17 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Contents {
+public class Stair {
 
-    @JsonProperty("detail")
-    private RoomDetail detail;
+    @JsonProperty("col")
+    private Long col;
 
-    @JsonProperty("inhabited")
-    private String inhabited;
+    @JsonProperty("dir")
+    private String dir;
 
-    @JsonProperty("summary")
-    private String summary;
+    @JsonProperty("key")
+    private String key;
+
+    @JsonProperty("row")
+    private Long row;
 }

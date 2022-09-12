@@ -1,42 +1,49 @@
 package com.github.alkar.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Block {
     @JsonProperty("area")
-    public Long area;
+    private Long area;
 
     @JsonProperty("col")
-    public Long col;
+    private Long col;
 
     @JsonProperty("east")
-    public Long east;
+    private Long east;
 
     @JsonProperty("height")
-    public Long height;
+    private Long height;
 
     @JsonProperty("id")
-    public Long id;
+    private Long id;
 
     @JsonProperty("north")
-    public Long north;
+    private Long north;
 
     @JsonProperty("offset")
-    public Double offset;
+    private Double offset;
 
     @JsonProperty("row")
-    public Long row;
+    private Long row;
 
     @JsonProperty("size")
-    public String size;
+    private String size;
 
     @JsonProperty("south")
-    public Long south;
+    private Long south;
 
     @JsonProperty("west")
-    public Long west;
+    private Long west;
 
     @JsonProperty("width")
-    public Long width;
+    private Long width;
 }

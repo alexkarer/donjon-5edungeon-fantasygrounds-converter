@@ -1,54 +1,62 @@
 package com.github.alkar.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CellBit {
 
     @JsonProperty("aperture")
-    public Long aperture;
+    private Long aperture;
 
     @JsonProperty("arch")
-    public Long arch;
+    private Long arch;
 
     @JsonProperty("block")
-    public Long block;
+    private Long block;
 
     @JsonProperty("corridor")
-    public Long corridor;
+    private Long corridor;
 
     @JsonProperty("door")
-    public Long door;
+    private Long door;
 
     @JsonProperty("label")
-    public Long label;
+    private Long label;
 
     @JsonProperty("locked")
-    public Long locked;
+    private Long locked;
 
     @JsonProperty("nothing")
-    public Long nothing;
+    private Long nothing;
 
     @JsonProperty("perimeter")
-    public Long perimeter;
+    private Long perimeter;
 
     @JsonProperty("portcullis")
-    public Long portcullis;
+    private Long portcullis;
 
     @JsonProperty("room")
-    public Long room;
+    private Long room;
 
     @JsonProperty("room_id")
-    public Long room_id;
+    private Long room_id;
 
     @JsonProperty("secret")
-    public Long secret;
+    private Long secret;
 
     @JsonProperty("stair_down")
-    public Long stair_down;
+    private Long stair_down;
 
     @JsonProperty("stair_up")
-    public Long stair_up;
+    private Long stair_up;
 
     @JsonProperty("trapped")
-    public Long trapped;
+    private Long trapped;
 }

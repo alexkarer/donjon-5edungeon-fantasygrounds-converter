@@ -1,62 +1,70 @@
 package com.github.alkar.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Room {
 
     @JsonProperty("area")
-    public Long area;
+    private Long area;
 
     @JsonProperty("blocks")
-    public List<Block> blocks;
+    private List<Block> blocks;
 
     @JsonProperty("col")
-    public Long col;
+    private Long col;
 
     @JsonProperty("composite")
-    public Long composite;
+    private Long composite;
 
     @JsonProperty("contents")
-    public Contents contents;
+    private Contents contents;
 
     @JsonProperty("doors")
-    public Doors doors;
+    private Doors doors;
 
     @JsonProperty("east")
-    public Long east;
+    private Long east;
 
     @JsonProperty("height")
-    public Long height;
+    private Long height;
 
     @JsonProperty("id")
-    public Long id;
+    private Long id;
 
     @JsonProperty("north")
-    public Long north;
+    private Long north;
 
     @JsonProperty("offset")
-    public double offset;
+    private double offset;
 
     @JsonProperty("polygon")
-    public Long polygon;
+    private Long polygon;
 
     @JsonProperty("row")
-    public Long row;
+    private Long row;
 
     @JsonProperty("shape")
-    public String shape;
+    private String shape;
 
     @JsonProperty("size")
-    public String size;
+    private String size;
 
     @JsonProperty("south")
-    public Long south;
+    private Long south;
 
     @JsonProperty("west")
-    public Long west;
+    private Long west;
 
     @JsonProperty("width")
-    public Long width;
+    private Long width;
 }
